@@ -40,9 +40,6 @@ nav {
 }
 
 
-
-
-
 /* ---------------- Main Conctent -------------- */
 
 header {
@@ -129,7 +126,7 @@ footer {
         font-family: "Ubuntu", sans-serif;
         line-height: 40px;
         font-size: 20px;
-        max-width: 35%;
+        max-width: 50%;
         margin: auto;
 
     }
@@ -172,6 +169,4 @@ footer {
             background-color: #64ffda;
         }
     }
-}
-
 }
