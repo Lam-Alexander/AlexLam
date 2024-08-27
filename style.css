@@ -1,5 +1,4 @@
 /* -------------- Navigation Bar -------------- */
-
 body {
     background-color: #0a192f;
     min-height: 100vh;
@@ -7,9 +6,6 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     font-family: "Ubuntu", sans-serif;
-
-
-
 }
 
 nav {
@@ -24,24 +20,30 @@ nav {
     display: none;
 }
 
-.gray-github, .linkedin, .green-github {
+.gray-github, .gray-linkedin {
+
     width: 36px;
     padding: 5px;
-
-}
-
-.linkedin {
+    transition: all 0.3s ease-in-out;
     margin: auto;
 }
 
 .alex {
     width: 100px;
-    margin-right: 150px;
+
+}
+
+.gray-github:hover {
+    content: url('images/green_github.png');
+}
+
+.gray-linkedin:hover {
+    content: url('images/green_linkedin.png');
 }
 
 
-/* ---------------- Main Conctent -------------- */
 
+/* ---------------- Main Conctent -------------- */
 header {
     display: flex;
     color: #8892b0;
@@ -85,7 +87,6 @@ h1 {
     font-style: normal;
 }
 
-
 h2 {
     color: #a8b2d1;
     font-family: "Ubuntu", sans-serif;
@@ -101,7 +102,6 @@ header div p {
 
 
 /* -------------------- Footer ------------------ */
-
 footer {
 
     color: #8892b0;
@@ -110,12 +110,32 @@ footer {
     font-size: 13px;
 }
 
+
+/* Media Query */
 @media only screen and (min-width: 1200px) {
 
-    footer {
-        padding-bottom: 2.5%;
-    }
+/* -------------- Navigation Bar -------------- */
+.nav-menu-bar {
+    display: flex;
+    
+}
 
+.nav-menu-bar a {
+    color: #d8d9d8;
+    margin: 50px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.nav-menu-bar a:hover {
+    background-color: #64ffda;
+    color: black;
+}
+
+/* ---------------- Main Conctent -------------- */
     header div {
         display: block;
         justify-content: center;
@@ -128,7 +148,6 @@ footer {
         font-size: 20px;
         max-width: 50%;
         margin: auto;
-
     }
 
     header h1 {
@@ -137,7 +156,6 @@ footer {
         font-weight: 400;
         font-style: normal;
         font-size: 75px;
-
     }
 
 
@@ -169,4 +187,20 @@ footer {
             background-color: #64ffda;
         }
     }
+
+/* -------------------- Footer ------------------ */
+     footer {
+         padding-bottom: 2.5%;
+    }
+
+       
 }
+
+@media only screen and (max-width: 600px) {
+
+    .alex {
+        width: 100px;
+        margin-right: 150px;
+    }
+}
+
