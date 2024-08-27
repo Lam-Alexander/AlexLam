@@ -1,0 +1,177 @@
+/* -------------- Navigation Bar -------------- */
+
+body {
+    background-color: #0a192f;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: "Ubuntu", sans-serif;
+
+
+
+}
+
+nav {
+    padding: 5px;
+    background-color: #0a192f;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-menu-bar {
+    display: none;
+}
+
+.gray-github, .linkedin, .green-github {
+    width: 36px;
+    padding: 5px;
+
+}
+
+.linkedin {
+    margin: auto;
+}
+
+.alex {
+    width: 100px;
+    margin-right: 150px;
+}
+
+
+
+
+
+/* ---------------- Main Conctent -------------- */
+
+header {
+    display: flex;
+    color: #8892b0;
+    text-align: center;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.name {
+    color: #64ffda;
+    font-weight: 500;
+}
+
+.cursor {
+    display: inline-block;
+    background-color: #64ffda;
+    width: 0.20rem;
+    height: 2rem;
+    animation: blink 1s infinite;
+    vertical-align: bottom;
+    border-radius: 50px;
+}
+
+
+@keyframes blink {
+    0%, 100% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: #64ffda;
+    }
+}
+
+h1 {
+    color: #ccd6f6;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+h2 {
+    color: #a8b2d1;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header div p {
+    font-family: "Ubuntu", sans-serif;
+    line-height: 28px;
+}
+
+
+
+/* -------------------- Footer ------------------ */
+
+footer {
+
+    color: #8892b0;
+    text-align: center;
+    padding-bottom: 10%;
+    font-size: 13px;
+}
+
+@media only screen and (min-width: 1200px) {
+
+    footer {
+        padding-bottom: 2.5%;
+    }
+
+    header div {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header div p {
+        font-family: "Ubuntu", sans-serif;
+        line-height: 40px;
+        font-size: 20px;
+        max-width: 35%;
+        margin: auto;
+
+    }
+
+    header h1 {
+        color: #ccd6f6;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 75px;
+
+    }
+
+
+    header h2 {
+        color: #a8b2d1;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+    }
+
+    .cursor {
+        display: inline-block;
+        background-color: #64ffda;
+        width: 0.35rem;
+        height: 4rem;
+        animation: blink 1s infinite;
+        vertical-align: bottom;
+        border-radius: 50px;
+    }
+
+
+    @keyframes blink {
+        0%, 100% {
+            background-color: transparent;
+        }
+
+        50% {
+            background-color: #64ffda;
+        }
+    }
+}
+
+}
