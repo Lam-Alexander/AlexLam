@@ -228,6 +228,22 @@ li::marker {
     background-color: #122d54;
 }
 
+button:active,
+button:focus {
+    background-color: #0a192f; /* Reset to original background */
+    outline: none;
+}
+
+@media (hover: none) {
+    button:hover {
+        background-color: #0a192f; /* No hover effect on touch devices */
+    }
+
+    #myBtn:hover {
+        background-color: #0a192f; /* Also disable hover on scroll button */
+    }
+}
+
 
 /* -------------------- Footer ------------------ */
 footer {
