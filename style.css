@@ -1,13 +1,60 @@
-/* -------------- Navigation Bar -------------- */
 body {
     background-color: #0a192f;
     min-height: 100vh;
     margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Varela Round", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    background-color: #0a192f;
+    color: #64ffda;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #64ffda;
+    text-decoration: none;
+}
+
+button a {
+    color: #64ffda;
+    text-decoration: none;
+    font-family: "Varela Round", sans-serif;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button:hover {
+    background-color: #122d54;
+    cursor: pointer;
+}
+
+.contact-me-button {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.mail-icon {
+    width: 25px;
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* -------------- Navigation Bar -------------- */
 nav {
     padding: 5px;
     background-color: #0a192f;
@@ -51,12 +98,21 @@ header {
     padding: 50px;
     justify-content: center;
     align-items: center;
-
 }
+
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
 
 .name {
     color: #64ffda;
     font-weight: 500;
+
 }
 
 .cursor {
@@ -82,12 +138,19 @@ header {
 
 h1 {
     color: #ccd6f6;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Varela Round", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 h2 {
+    color: #a8b2d1;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
     color: #a8b2d1;
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
@@ -99,6 +162,71 @@ header div p {
     line-height: 28px;
 }
 
+main {
+    color: #a8b2d1;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.about-me, .experience, .projects {
+    text-align: center;
+    padding: 50px;
+}
+
+
+.maybeanadventure {
+    width: 275px;
+    border-radius: 10px;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 0.5px;
+    width: 75%;
+    border-color: #64ffda;
+    border-radius: 100%;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
+li::marker {
+    color: #64ffda;
+}
+
+.main-p {
+    color: #8892b0;
+    line-height: 30px;
+}
+
+
+#myBtn {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 99;
+    cursor: pointer;
+    padding: 10px;
+    width: 50px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #0a192f;
+
+}
+
+#myBtn:hover {
+    background-color: #122d54;
+}
 
 
 /* -------------------- Footer ------------------ */
@@ -111,42 +239,62 @@ footer {
 }
 
 
-/* Media Query */
+/* -------------------- Media Query ----------------------- */
 @media only screen and (min-width: 1200px) {
 
-/* -------------- Navigation Bar -------------- */
-.nav-menu-bar {
-    display: flex;
-    
-}
+    /* -------------- Navigation Bar -------------- */
+    .nav-menu-bar {
+        display: flex;
+    }
 
-.nav-menu-bar a {
-    color: #d8d9d8;
-    margin: 50px;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10px;
-    text-decoration: none;
-}
+    .nav-menu-bar a {
+        color: #d8d9d8;
+        margin: 50px;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+        text-decoration: none;
+    }
 
-.nav-menu-bar a:hover {
-    background-color: #64ffda;
-    color: black;
-}
+    a {
+        text-decoration: none;
+    }
 
-/* ---------------- Main Conctent -------------- */
+    .nav-menu-bar a:hover {
+        background-color: #64ffda;
+        color: black;
+    }
+
+    /* ---------------- Main Conctent -------------- */
     header div {
         display: block;
         justify-content: center;
         align-items: center;
+        margin: 300px;
+    }
+
+    .contact-me-button {
+        margin-top: 50px;
+        text-decoration: none;
+    }
+
+    button {
+        text-decoration: none;
+    }
+
+    header div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     header div p {
         font-family: "Ubuntu", sans-serif;
         line-height: 40px;
         font-size: 20px;
-        max-width: 50%;
+        max-width: 65%;
         margin: auto;
     }
 
@@ -188,12 +336,100 @@ footer {
         }
     }
 
-/* -------------------- Footer ------------------ */
-     footer {
-         padding-bottom: 2.5%;
+    .about-me {
+        color: #a8b2d1;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+        margin: 150px;
     }
 
-       
+    .about-me p {
+        font-size: 20px;
+        line-height: 40px;
+        display: inline-block;
+        max-width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experience {
+        color: #a8b2d1;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+        margin: 150px;
+    }
+
+    .experience-wrapper {
+        font-size: 20px;
+        line-height: 40px;
+        display: inline-block;
+        max-width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects {
+        color: #a8b2d1;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+        margin: 150px;
+    }
+
+    .projects-wrapper {
+        font-size: 20px;
+        line-height: 40px;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .maybeanadventure {
+        width: 50%;
+    }
+
+    button {
+        padding: 25px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    a button {
+        font-size: 20px;
+        font-family: "Varela Round", sans-serif;
+        font-weight: bold;
+    }
+
+    /* arrow up button */
+    #myBtn {
+        display: flex;
+        position: fixed;
+        bottom: 20px;
+        right: 15px;
+        z-index: 99;
+        cursor: pointer;
+        padding: 10px;
+        width: 50px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    #myBtn:hover {
+        background-color: #122d54;
+    }
+
+
+    /* -------------------- Footer ------------------ */
+    footer {
+        padding-bottom: 2.5%;
+    }
+
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -203,4 +439,3 @@ footer {
         margin-right: 150px;
     }
 }
-
