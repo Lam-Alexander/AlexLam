@@ -120,6 +120,12 @@ header div {
 
 h1 {
     color: #ccd6f6;
+
+}
+
+.header-name {
+    margin-bottom: -10px;
+    font-size: 40px;
 }
 
 h2 {
@@ -284,6 +290,10 @@ footer {
 
     button {
         text-decoration: none;
+    }
+
+    .header-memo {
+        font-size: 26px;
     }
 
     header div {
