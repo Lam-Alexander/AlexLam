@@ -18,15 +18,6 @@ button {
     border: 1px solid;
     border-radius: 5px;
     border-color: #64ffda;
-    text-decoration: none;
-}
-
-button a {
-    color: #64ffda;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-
 }
 
 button:hover {
@@ -38,8 +29,6 @@ button:hover {
     margin-top: 5%;
     display: flex;
     align-items: center;
-    text-decoration: none;
-
 }
 
 .mail-icon {
@@ -95,28 +84,26 @@ header {
     text-align: center;
     padding: 50px;
     justify-content: center;
-    align-items: center;
 }
 
 header div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
 .name {
     color: #64ffda;
-    font-weight: 500;
+    font-weight: 800;
 }
 
 .cursor {
     display: inline-block;
     background-color: #64ffda;
     width: 0.20rem;
-    height: 2rem;
+    height: 2.2rem;
     animation: blink 1s infinite;
-    vertical-align: bottom;
+    vertical-align: middle;
     border-radius: 50px;
 }
 
@@ -133,38 +120,43 @@ header div {
 
 h1 {
     color: #ccd6f6;
-    font-weight: 400;
-    font-style: normal;
 }
 
 h2 {
     color: #a8b2d1;
-    font-weight: 400;
-    font-style: normal;
+    margin-top: 0px;
 }
 
 h3 {
     color: #a8b2d1;
-    font-weight: 400;
     font-style:italic;
 }
 
 header div p {
     line-height: 28px;
+    margin-top: 0px;
 }
 
 main {
-    color: #a8b2d1;
+    
+    color: #8892b0;
     font-weight: 400;
     font-style: normal;
     text-align: center;
 }
 
-.about-me, .experience, .projects {
-    text-align: center;
-    padding: 50px;
+.tech-stack {
+color: #a8b2d1;
 }
 
+.not-supported {
+    color: #a8b2d1;
+}
+
+.about-me, .experience, .projects {
+    text-align: center;
+    padding: 40px;
+}
 
 .maybeanadventure {
     width: 275px;
@@ -233,6 +225,7 @@ button:focus {
 }
 
 
+
 /* -------------------- Footer ------------------ */
 footer {
 
@@ -243,8 +236,11 @@ footer {
 }
 
 
+
 /* -------------------- Media Query ----------------------- */
 @media only screen and (min-width: 1200px) {
+
+
 
     /* -------------- Navigation Bar -------------- */
     .nav-menu-bar {
@@ -270,12 +266,15 @@ footer {
         color: black;
     }
 
+
+
     /* ---------------- Main Conctent -------------- */
     header div {
         display: block;
         justify-content: center;
         align-items: center;
         margin: 300px;
+        margin-top: 150px;
     }
 
     .contact-me-button {
@@ -320,12 +319,11 @@ footer {
         display: inline-block;
         background-color: #64ffda;
         width: 0.35rem;
-        height: 4rem;
+        height: 5rem;
         animation: blink 1s infinite;
-        vertical-align: bottom;
+        vertical-align: middle;
         border-radius: 50px;
     }
-
 
     @keyframes blink {
         0%, 100% {
@@ -421,6 +419,7 @@ footer {
     }
 
 
+
     /* -------------------- Footer ------------------ */
     footer {
         padding-bottom: 2.5%;
@@ -432,5 +431,13 @@ footer {
     .alex {
         width: 100px;
         margin-right: 150px;
+    }
+}
+
+
+/* For Galaxy Z Flip */
+@media screen and (max-width: 356px) {
+    .nav-social-bar {
+        display: flex;
     }
 }
