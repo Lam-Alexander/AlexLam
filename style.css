@@ -244,6 +244,27 @@ footer {
 
 
 /* -------------------- Media Query ----------------------- */
+
+
+
+/* For Galaxy Z Flip */
+@media screen and (max-width: 356px) {
+    .nav-social-bar {
+        display: flex;
+    }
+}
+
+
+/* This is for the logo double check this */
+@media only screen and (max-width: 600px) {
+
+    .alex {
+        width: 100px;
+        margin-right: 150px;
+    }
+}
+
+
 @media only screen and (min-width: 1200px) {
 
 
@@ -293,7 +314,11 @@ footer {
     }
 
     .header-memo {
-        font-size: 26px;
+        font-size: 24px;
+    }
+
+    .header-name {
+        font-size: 68px;
     }
 
     header div {
@@ -436,18 +461,14 @@ footer {
     }
 }
 
-@media only screen and (max-width: 600px) {
-
-    .alex {
-        width: 100px;
-        margin-right: 150px;
-    }
-}
 
 
-/* For Galaxy Z Flip */
-@media screen and (max-width: 356px) {
-    .nav-social-bar {
+
+
+/* 
+@media screen and (max-width: 1000px) {
+
+    .nav-menu-bar {
         display: flex;
     }
-}
+} */
